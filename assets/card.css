@@ -1,0 +1,7 @@
+[data-block-release="printer@0.1.0"] .device-node-card { display:flex;flex-direction:column;align-items:center;gap:6px;padding:6px;min-width:0; }
+[data-block-release="printer@0.1.0"] .device-card-equipment { max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#64718b;font-size:11px; }
+[data-block-release="printer@0.1.0"] .block-node-card-title { margin:0;font-size:14px;font-weight:650;color:#283853; }
+[data-block-release="printer@0.1.0"] .device-scan-button { border:1px solid #89afdf;border-radius:7px;background:#edf5ff;color:#23558e;padding:6px 12px;font:inherit;cursor:pointer; }
+[data-block-release="printer@0.1.0"] .device-scan-button:disabled { opacity:.55;cursor:not-allowed; }
+[data-block-release="printer@0.1.0"] .device-scan-button:focus-visible { outline:3px solid #80aef0;outline-offset:2px; }
+[data-block-release="printer@0.1.0"] .device-card-status { max-width:170px;font-size:10px;line-height:1.4;color:#63728b; }

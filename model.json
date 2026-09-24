@@ -1,0 +1,18 @@
+{
+  "kind": "printer", "version": "0.1.0",
+  "bloxsmith_compatibility": ["1.0.9"], "tested_with_bloxsmith": "1.0.9",
+  "title": "Printer", "description": "Prints incoming documents through an installed CUPS printer.",
+  "locales": {"en": "locales/en.json", "fr": "locales/fr.json"},
+  "ports": {
+    "inputs": [{"id": 1, "name": "document", "title": "Document", "accepts": ["file/path", "image/path", "message/*", "text/plain", "application/json", "application/pdf"], "multiplicity": "one", "required": true, "execution_requirement": "required_for_execution"}],
+    "outputs": [{"id": 1, "name": "job", "title": "Print job", "emits": ["application/json"], "multiplicity": "many"}]
+  },
+  "config": {"printer": "", "copies": 1, "color": "default", "sides": "default", "paper": "default", "orientation": "default", "page_ranges": "", "timeout_sec": 30, "max_file_mb": 50},
+  "port_capabilities": {"can_add_inputs": false, "can_add_outputs": false, "allow_required_input": false, "default_required": true},
+  "runtime": {"initial_state": "waiting", "runtime_executable": true, "active_worker": true, "centralized_executor": "generic", "centralized_dependency_mode": "all_inputs"},
+  "ui_assets": {
+    "modal": [{"kind": "css", "path": "assets/properties.css"}, {"kind": "js", "path": "assets/properties.js"}],
+    "inspector_panel": [{"kind": "css", "path": "assets/properties.css"}, {"kind": "js", "path": "assets/properties.js"}],
+    "node_card": [{"kind": "css", "path": "assets/card.css"}]
+  }
+}
