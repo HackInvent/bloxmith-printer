@@ -12,6 +12,10 @@ existing OS queue, not by this block.
 Verified BloxSmith versions: **1.0.9** (bundled-block tests; see [test evidence](compatibility.json)).
 <!-- block-metadata:end -->
 
+[![PRINTER — Submits an incoming document to an already installed system printer queue.](media/thumbnail.webp)](media/cover.png)
+
+*Concept illustration. [Artwork and generation prompt](media/README.md).*
+
 ## Requirements
 
 - Linux on the machine running BloxSmith, with `lp` and `lpstat` (CUPS client tools).
