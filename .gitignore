@@ -7,3 +7,20 @@ __pycache__/
 /tests/results/
 /tests/framework/
 *.log
+
+# Keep private configuration and disposable runtime/test data out of this package.
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+venv/
+.DS_Store
+Thumbs.db
+!.env.example
+/logs/
+/user/
+/projects/
+/runs/
+/session/
+/exports/
